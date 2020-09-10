@@ -144,32 +144,38 @@ nav a:hover {
 /* Main */
 
 main {
-    margin: 5%;
+    margin: 5% auto 10%;
 }
 
 li {
     display: flex;
     flex-flow: column wrap;
+    margin: 2% auto;
 }
 
 li h1 {
     flex: 1;
+    margin: 2% auto 5%;
 }
 
 .two {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 }
 
-#basic-crm img {
-    width: 25%;
+.two img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border: .1em solid black;
     border-radius: 5px;
+    flex: 0 1;
 }
 
-#basic-crm p {
+.two p {
     width: 25%;
     border-radius: 5px;
-    flex: 2;
+    flex: 6 0;
 }
 
 
