@@ -1,1 +1,264 @@
-/* Add CSS styling here */
+/**********
+Success Color Palette
+Color - Hex - RGB
+Blue - #003663 - (0,54,99)
+Grey - #dddddd - (221,221,221)
+White - #ffffff	- (255,255,255)
+OrangeRed - #CF4C3A - (255,102,51)
+Green - #6cc070 - (108,192,112)
+**********/
+
+/*****
+Reset
+******/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom CSS Beyond this point */
+html {
+    font-size: 62.5%;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Nav */
+
+nav {
+    width: 100vw;
+    height: 15vh;
+    min-height: 90px;
+    padding: 0 4%;
+    
+    background-color: rgba(0, 54, 99, 0.699);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+}
+nav .logo {
+    height: 100%;
+}
+.nav-links {
+    flex-basis: 25%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Header */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    box-shadow: 0 0 10px #2b2b2b;
+}
+
+header video {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: saturate(30%);
+}
+
+header .viewport-header {
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    color: #ffffff;
+}
+
+.viewport-header h1 {
+    font-size: 8rem;
+    font-family: monospace;
+    margin-left: 10%;
+    letter-spacing: .2em;
+}
+
+
+.viewport-header p {
+    font-size: 2.5rem;
+    margin-left: 10%;
+}
+
+.viewport-header a {
+    position: relative;
+    font-size: 2.5rem;
+    margin: 2% 10%;
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+}
+
+.viewport-header a::after {
+    border-top: 1px solid white;
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 1.5em;
+    transition: .2s ease-out;
+}
+
+.viewport-header a:hover::after {
+    left: 0%;
+    right: 0%;
+}
+
+
+/* Section */
+
+section {
+    width: 100vw;
+    height: 77vh;
+}
+
+#section-wrapper {
+    width: 95%;
+    height: 95%;
+    margin: 3% auto;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #CF4C3A;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.project-icon {
+    margin: 1%;
+    width: 25%;
+    height: 95%;
+    flex: 1;
+    background-color: #6cc070;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-img {
+    width: 92%;
+    margin: 3% auto;
+}
+
+.project-img img {
+    border-radius: 10px;
+    box-shadow: 0 0 5px #2b2b2b;
+}
+
+.project-sum {
+    width: 93%;
+    margin-top: 2%;
+    font-size: 1.5rem;
+}
+
+/* footer */
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    background-color: #dddddd;
+    padding: 2%;
+    box-shadow: 0 0 10px #2b2b2b;
+}
