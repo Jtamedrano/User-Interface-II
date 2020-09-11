@@ -1,0 +1,260 @@
+/**********
+Success Color Palette
+Color - Hex - RGB
+Blue - #003663 - (0,54,99)
+Grey - #dddddd - (221,221,221)
+White - #ffffff	- (255,255,255)
+OrangeRed - #CF4C3A - (255,102,51)
+Green - #6cc070 - (108,192,112)
+
+fonts
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
+**********/
+
+/*****
+Reset
+******/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom CSS Beyond this point */
+html {
+    font-size: 62.5%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Nav */
+
+nav {
+    width: 100vw;
+    height: 15vh;
+    min-height: 90px;
+    padding: 0 4%;
+    
+    background-color: #3C3C3C;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px black;
+}
+nav img {
+    width: auto;
+    max-height: 90%;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #2b2b2b;
+}
+.nav-links {
+    flex-basis: 25%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1% 2%;
+    background-color: #CF4C3A;
+    border: .05em solid #CF4C3A;
+}
+
+nav a:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+nav a:nth-child(4) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    padding: 1% 2%;
+    background-color: #b84334;
+    border: .05em solid #9e392c;
+}
+
+/* Main */
+
+main {
+    margin: 5% auto 10%;
+    font-size: 1.5rem;
+    width: 90vw;
+    min-height: 27.5vw;
+    text-align: center;
+}
+
+main h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 6rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #666666;
+    width: max-content;
+    margin: 0 auto 3%;
+    padding: 0 5%;
+}
+
+
+/* footer */
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    background-color: #dddddd;
+    box-shadow: 0 0 10px #2b2b2b;
+    display: flex;
+    padding: 0 1%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.copy {
+    flex: 1;
+}
+
+footer .social {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #2b2b2b;
+  }
+  
+  .fa:hover {
+      opacity: 0.9;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+
+.footer-nav {
+    flex: 1;
+}
+
+footer a {
+    color: #000000;
+}
