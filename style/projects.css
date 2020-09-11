@@ -6,6 +6,10 @@ Grey - #dddddd - (221,221,221)
 White - #ffffff	- (255,255,255)
 OrangeRed - #CF4C3A - (255,102,51)
 Green - #6cc070 - (108,192,112)
+
+fonts
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif;
 **********/
 
 /*****
@@ -95,8 +99,16 @@ select {
 html {
     font-size: 62.5%;
     position: relative;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     scroll-behavior: smooth;
+    background-color: #6cc070;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p, a {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Nav */
@@ -114,8 +126,11 @@ nav {
     align-items: center;
     box-shadow: 0 0 5px black;
 }
-nav .logo {
-    height: 100%;
+nav img {
+    width: auto;
+    max-height: 90%;
+    border-radius: 50px;
+    box-shadow: 0 0 2px black;
 }
 .nav-links {
     flex-basis: 25%;
@@ -134,6 +149,17 @@ nav a {
     background-color: #CF4C3A;
     border: .05em solid #CF4C3A;
 }
+
+nav a:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+nav a:nth-child(4) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 nav a:hover {
     color: #ffffff;
     padding: 1% 2%;
@@ -145,37 +171,73 @@ nav a:hover {
 
 main {
     margin: 5% auto 10%;
+    font-size: 1.5rem;
+    width: 90vw;
 }
 
-li {
+main h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 6rem;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #666666;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+main ul {
+    margin: 5% auto 10%;
+    list-style: none;
+    background-color: #ffffff;
+    padding: 2% 4%;
+    border-radius: 12px;
+    box-shadow: 0 0 5px #666666;
+}
+
+main li {
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-evenly;
     margin: 2% auto;
+    padding: 0 0 4%;
+    border-bottom: .1em solid gray;
 }
 
 li h1 {
     flex: 1;
     margin: 2% auto 5%;
 }
-
+.one {
+    margin: auto 0 2%;
+}
 .two {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 0 auto;
 }
 
 .two img {
     display: block;
     height: auto;
-    width: 100%;
-    border: .1em solid black;
+    width: 40%;
     border-radius: 5px;
-    flex: 0 1;
 }
 
-.two p {
-    width: 25%;
-    border-radius: 5px;
+.summary {
     flex: 6 0;
+    margin: 0 5% 0;
+    padding: 2% 4%;
+    line-height: 2em; 
+    background-color: #dddddd;
+    border-radius: 12px;
+}
+
+.summary p {
+    text-indent: 2em;
 }
 
 
