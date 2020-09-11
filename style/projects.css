@@ -314,3 +314,38 @@ footer .social {
 footer a {
     color: #000000;
 }
+
+@media only screen and (max-width: 890px) {
+  html, body {
+    font-size: 50%;
+}
+
+nav img {
+    display: none;
+}
+
+nav ul{
+    justify-content: center;
+}
+
+.nav-links {
+    flex: 0 1;
+    flex-basis: 90%;;
+    margin: 0 auto;
+}
+
+.two {
+  flex-flow: column nowrap;
+}
+
+.two img {
+  order: 1;
+  width: 90%;
+  margin: 0% auto 4%;
+}
+
+.two div {
+  order: 2;
+}
+
+}

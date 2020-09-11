@@ -133,9 +133,12 @@ nav img {
     max-height: 90%;
     border-radius: 50px;
     box-shadow: 0 0 2px black;
+    flex: 0 1;
 }
 .nav-links {
+    flex: 0 1;
     flex-basis: 25%;
+    margin: 0 2% 0 auto;
 }
 
 nav ul {
@@ -219,8 +222,8 @@ header .viewport-header {
 }
 
 @keyframes typing {
-    from { width: 0 }
-    to { width: 676px }
+    from { flex-basis: 0 }
+    to { flex-basis: 676px }
 }
 
 @keyframes blinking-caret {
@@ -395,4 +398,55 @@ footer .social {
 
 footer a {
     color: #000000;
+}
+
+/* Media Querys */
+
+@media only screen and (max-width: 890px) {
+    html, body {
+        font-size: 50%;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav ul{
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex: 0 1;
+        flex-basis: 90%;;
+        margin: 0 auto;
+    }
+
+    .viewport-header .text-container {
+        margin: 0 5%;
+    }
+    
+    .viewport-header h1 {
+        overflow: visible; 
+        border-right: none;
+        white-space: normal;
+        letter-spacing: .1em;
+        animation: none;
+    }
+
+    #section-wrapper {
+        flex-flow: column wrap;
+    }
+
+    .project-icon {
+        margin: 1%;
+        width: 80%;
+        background-color: #dddddd;
+        color: #000;
+        border: .1em solid black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
