@@ -338,6 +338,8 @@ section {
 }
 
 .project-img img {
+    height: 200px;
+    margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 0 5px #2b2b2b;
     border: .1em solid black;
