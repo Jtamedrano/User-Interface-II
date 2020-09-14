@@ -388,12 +388,12 @@ nav a {
 }
 
 .show {
-  width: 40vw;
-  left: 60%;
+  width: 50vw;
+  left: 50%;
 }
 
 main {
-  min-height: calc(100vh - 60vh);
+  min-height: calc(100vh - 80vh);
 }
 
 .burger {
@@ -428,7 +428,57 @@ main h1 {
 }
 
 footer {
-  min-height: 60vh;
+  width: 100vw;
+  min-height: 20vh;
+  text-align: center;
+  background-color: #dddddd;
+  box-shadow: 0 0 10px #2b2b2b;
+  display: flex;
+  padding: 0 1%;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer p, .footer-nav a {
+  font-size: 2rem;
+}
+
+.copy {
+  flex: none;
+}
+
+footer .social {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  flex: none;
+  justify-content: space-evenly;
+}
+
+.footer-nav {
+  flex: none;
+}
+}
+
+@media only screen and ( max-width: 270px ) {
+
+  main {
+    min-height: calc(100vh - 50vh);
+    width: 100%;
+}
+
+.show {
+  width: 50vw;
+  left: 50%;
+}
+
+.change .burger {
+  margin-right: 60%;
+}
+
+footer {
+  min-height: 50vh;
   flex-flow: column;
   justify-content: space-evenly;
   font-size: 1rem;
