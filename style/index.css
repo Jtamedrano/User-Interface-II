@@ -568,6 +568,11 @@ footer a {
         justify-content: space-evenly;
         align-items: center;
     }
+
+    footer p, .footer-nav a {
+        font-size: 2rem;
+    }
+
     .copy {
         flex: none;
     }
@@ -608,8 +613,19 @@ footer a {
     }
     footer {
         min-height: 60vh;
-    }
-    footer .social {
         flex-flow: column;
+        justify-content: space-evenly;
+      }
+
+      .copy {
+        flex: none;
+      }
+      footer .social {
+        flex-flow: column;
+        flex: none;
     }
+    
+      .footer-nav {
+        flex: none;
+      }
 }
