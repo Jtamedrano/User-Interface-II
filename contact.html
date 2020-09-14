@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/contact.css">
     <title>Jesse Medrano | Contact</title>
 </head>
 <body>
-    <nav>
-        <img src="resources/img/logo-no-txt copy.png" alt="Jesse Medrano Logo">
-        <div class='nav-links'>
-            <ul class="links">
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="projects.html">
-                    <li>Projects</li>
-                </a>
-                <a href="about.html">
-                    <li>About</li>
-                </a>
-                <a href="contact.html">
-                    <li>Contact</li>
-                </a>
-            </ul>
-        </div>
+    <nav class="nav">
+        <ul class="navLinksCont">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="projects.html">
+                <li>Projects</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
     </nav>
     <main>
+        <div class="top-bar">
+            <img id="logo" src="resources/img/logo-no-txt copy.png" alt="Jesse Medrano Logo">
+            
+            <div class="burger" onclick="burgerChange(this)">
+                <div class="burgerLine blOne"></div>
+                <div class="burgerLine blTwo"></div>
+                <div class="burgerLine blThree"></div>
+            </div>
+        </div>
         <h1>Contact</h1>
         <p>Jesse Medrano</p>
         <p><strong>Email:</strong> <a href="mailto:jtamedrano@gmail.com">Jtamedrano@gmail.com</a></p>
@@ -48,5 +54,6 @@
             <a href="contact.html">Contact</a>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html
