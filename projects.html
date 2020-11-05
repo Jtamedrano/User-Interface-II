@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/projects.css">
+    <title>Jesse Medrano | Projects</title>
 </head>
 <body>
-    <h1> PROJECTS </h1>
+    <nav class="nav">
+        <ul class="navLinksCont">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="projects.html">
+                <li>Projects</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <div class="top-bar">
+            <img id="logo" src="resources/img/logo-no-txt copy.png" alt="Jesse Medrano Logo">
+            
+            <div class="burger" onclick="burgerChange(this)">
+                <div class="burgerLine blOne"></div>
+                <div class="burgerLine blTwo"></div>
+                <div class="burgerLine blThree"></div>
+            </div>
+        </div>
+        <h1>Projects</h1>
+        <ul>
+            <li id="basic-crm">
+                <div class="flex-row one">
+                    <h2>Basic CRM</h2>
+                </div>
+                <div class="flex-row two">
+                    <div class="summary">
+                        <h3>Why was Basic CRM made?</h3>
+                        <p>It has been my experience that having a way to organize clients, prospects, and customer data is an essential part of sales. It allows for a sales person to keep their work organized and makes customers feel better when the sales person remembers information after an interaction. The Basic CRM was my way of making my own customer database system.</p>
+                        <h3>What was used to make Basic CRM</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>HTML:</strong> 31.3%</td>
+                                    <td><strong>JavaScript:</strong> 68.7%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Links</h3>
+                        <a href="https://basic-crm-jm.netlify.app/">Link to Basic CRM</a>
+                    </div>
+                    <img src="resources/img/basic-crm-ss.png" alt="Screenshot of Basic CRM">
+                </div>
+            </li>
+            <li id="call-counter">
+                <div class="flex-row one">
+                    <h2>Call Counter</h2>
+                </div>
+                <div class="flex-row two">
+                    <img src="resources/img/call counter ss.png" alt="Screenshot of Call Counter">
+                    <div class="summary">
+                        <div class="summary">
+                            <h3>Why was "Call Counter" made?</h3>
+                            <p>I was having a hard time tracking calls working in a call center job and I need to create a tool that would solve this problem. I made a tool that would count the numbers of calls I would get in a day. The "Call Counter" is the main tool I use at work to track my progress.</p>
+                            <h3>What was used to make "Call Counter"</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>HTML:</strong> 24.4%</td>
+                                        <td><strong>CSS:</strong> 14.0%</td>
+                                        <td><strong>JavaScript:</strong> 61.6%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>Links</h3>
+                            <a href="https://call-counter-jm.netlify.app/">Link to Call Counter</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="portfolio-project">
+                <div class="flex-row one">
+                    <h2>Personal Portfolio</h2>
+                </div>
+                <div class="flex-row two">
+                    <div class="summary">
+                        <h3>Why was my Portfolio made?</h3>
+                        <p>This Portfolio was made to display my work and bring awarness to my skill as a team member, web developer, and creator.</p>
+                        <h3>What was used to make my Portfolio</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><strong>HTML:</strong> 97.1%</td>
+                                    <td><strong>CSS:</strong> 2.9%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Links</h3>
+                        <a href="https://jesse-m.netlify.app/">Link to My Portfolio</a>
+                    </div>
+                    <img src="resources/img/Portfolio Website SS.png" alt="Screenshot of Portfolio">
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p class="copy">Jesse Medrano (C) 2020</p>
+        <div class="social">
+            <a href="https://www.facebook.com/jtamedrano" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/Jtamedrano" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/jesse-medrano-8607a9111/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/jtamedrano/" class="fa fa-instagram"></a>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html">Home</a> | 
+            <a href="projects.html">Projects</a> | 
+            <a href="about.html">About</a> | 
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html
